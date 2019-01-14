@@ -30,6 +30,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+jekyll_get:
+  data: application
+  json: 'http://95.216.187.204:3000/applications'
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

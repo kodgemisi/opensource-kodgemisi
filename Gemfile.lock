@@ -30,6 +30,8 @@ GEM
     ffi (1.10.0)
     forwardable-extended (2.6.0)
     fssm (0.2.10)
+    hash-joiner (0.0.7)
+      safe_yaml
     html_press (0.8.2)
       htmlentities
       multi_css (>= 0.1.0)
@@ -133,6 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hash-joiner
   jekyll (~> 3.8.5)
   jekyll-assets
   jekyll-compass
