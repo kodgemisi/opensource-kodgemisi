@@ -33,3 +33,5 @@ gem 'jekyll-compass'
 gem 'jekyll-minify-html'
 gem 'sass'
 gem 'uglifier'
+gem 'jekyll_asset_pipeline'
+

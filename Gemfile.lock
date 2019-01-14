@@ -78,6 +78,9 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
+    jekyll_asset_pipeline (0.6.0)
+      jekyll (~> 3.5)
+      liquid (~> 4.0)
     json (2.1.0)
     kramdown (1.17.0)
     liquid (4.0.1)
@@ -135,6 +138,7 @@ DEPENDENCIES
   jekyll-compass
   jekyll-feed (~> 0.6)
   jekyll-minify-html
+  jekyll_asset_pipeline
   minima (~> 2.0)
   sass
   tzinfo-data
