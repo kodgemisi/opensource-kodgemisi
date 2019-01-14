@@ -29,6 +29,11 @@ permalink: /about/
                         <span class="round align-self-center round-info" title="{{type}}"><i class="ti-user"></i></span>
                     {% endfor %}
                 </div>
+                <div class="m-t-5">
+                    {% for url in app.urls %}
+                        <a href="{{url.link}}">{{url.text}}</a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
