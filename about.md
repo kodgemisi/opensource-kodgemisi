@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 {% for app in site.data.application %}
-<div class="col-lg-3 col-md-6">
+<div class="col-lg-4 col-md-6">
     <div class="card">
         <div class="el-card-item">
             <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg" alt="user" />
