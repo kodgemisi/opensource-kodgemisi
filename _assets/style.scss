@@ -1,0 +1,61 @@
+/*
+Thanks to below imports we don't need to include compiled version of style.css in `{% css_asset_tag global %}` tag like 
+- /_assets/material-pro/material/css/style.css
+
+See "11. scss & css" section on https://wrappixel.com/demos/admin-templates/material-pro/Documentation/document.html
+*/
+
+@import 'material-pro/material/scss/variable';
+
+/*bootstrap Color*/
+$danger: #F89917; /* java orange*/
+$success: #77BC1F; /* spring green*/
+$warning: #F0DB4F; /* js yellow*/
+$primary: #7460ee;
+$info: #5283A2;
+$inverse: #2f3d4a;
+$muted: #99abb4;
+$dark: #003C53; /* ribbon-default color*/
+$light: #348488;
+$extra-light: #ebf3f5;
+
+@import 'material-pro/material/scss/app';
+@import 'material-pro/material/scss/pages';
+@import 'material-pro/material/scss/sidebar';
+@import 'material-pro/material/scss/icons/font-awesome/css/font-awesome.min.css';
+@import 'material-pro/material/scss/icons/simple-line-icons/css/simple-line-icons.css';
+@import 'material-pro/material/scss/icons/weather-icons/css/weather-icons.min.css';
+@import 'material-pro/material/scss/icons/linea-icons/linea.css';
+@import 'material-pro/material/scss/icons/themify-icons/themify-icons.css';
+@import 'material-pro/material/scss/icons/flag-icon-css/flag-icon.min.css';
+@import "material-pro/material/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css";
+@import 'material-pro/material/scss/widgets';
+@import 'material-pro/material/scss/grid';
+@import 'material-pro/material/scss/responsive';
+@import 'material-pro/material/css/spinners.css';
+@import 'material-pro/material/css/animate.css';
+
+.project-link {
+	margin-right: 15px;
+}
+
+footer {
+	padding: 30px;
+	background: #fbfbfb;
+}
+
+
+/* Overrides */
+
+.mdi-coffee-outline:before {
+    content: " ";
+    background: url('/assets/icons/java.png');
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page-wrapper {
+    padding-bottom: 0;
+}

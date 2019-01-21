@@ -1,11 +1,7 @@
 class TypeRibbonTag < Liquid::Tag
 
   @@ribbonClass = {
-    'java' => 'ribbon-success',
-    'spring-plugin' => 'ribbon-success',
-    'library' => 'ribbon-info',
-    'python' => 'ribbon-info',
-    'javascript' => 'ribbon-warning'
+
   }
 
   def initialize(tag_name, input, tokens)
@@ -15,7 +11,7 @@ class TypeRibbonTag < Liquid::Tag
 
   def render(context)
     lang = context[@input.strip]
-    clazz = @@ribbonClass[lang] || 'ribbon-default'
+    clazz = @@ribbonClass[lang] || 'ribbon-info'
 
     return "<div class=\"ribbon #{clazz}\">#{lang}</div>"
   end

@@ -1,7 +1,7 @@
 class TechRibbonTag < Liquid::Tag
 
   @@ribbonClass = {
-    'java' => 'ribbon-success',
+    'java' => 'ribbon-danger',
     'spring' => 'ribbon-success',
     'python' => 'ribbon-info',
     'javascript' => 'ribbon-warning'
