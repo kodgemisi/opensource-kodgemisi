@@ -59,3 +59,7 @@ footer {
 .page-wrapper {
     padding-bottom: 0;
 }
+
+.el-element-overlay .el-card-item .el-overlay-1 {
+    height: inherit; /*Firefox fix*/
+}
