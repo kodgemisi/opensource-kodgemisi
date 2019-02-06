@@ -22,7 +22,12 @@ title: Kod Gemisi Open Source
             {% type_ribbon {{app.type}} %}
             {% tech_ribbon {{app.tech}} %}
             <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="https://raw.githubusercontent.com/kodgemisi/better-error-pages-spring-boot-starter/master/docs/screenshot.png" alt="user" />
+                <div class="el-card-avatar el-overlay-1">
+                    {% if app.image_url == nil %}
+                        <img src="https://raw.githubusercontent.com/kodgemisi/better-error-pages-spring-boot-starter/master/docs/screenshot.png" alt="user" />
+                    {% else %}
+                        <img src="{{app.image_url}}" alt="user" />
+                    {% endif %}
                 </div>
                 <div class="el-card-content">
                     <h3 class="box-title">{{app.title}}</h3> <small>{{app.description}}</small>
