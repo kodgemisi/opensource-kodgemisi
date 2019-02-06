@@ -49,7 +49,7 @@ echo '✔ generated files copied'
 rm -rf ../$TEMP_FOLDER_NAME
 echo "🚮 ../$TEMP_FOLDER_NAME deleted"
 
-rm _site/publi.sh _site/README.md _site/docker-compose.yml _site/Dockerfile
+rm _site/publi.sh _site/README.md
 
 echo '• git add'
 git add .
