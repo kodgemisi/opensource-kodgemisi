@@ -5,7 +5,7 @@
     "description": "Rails like error pages for Spring Boot applications that are only active in development",
     "tech": "java",
     "type": "spring-plugin",
-    "image_url": "https://raw.githubusercontent.com/kodgemisi/better-error-pages-spring-boot-starter/master/docs/screenshot.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/better-error-pages-spring-boot-starter.png",
     "urls": [
       {
         "type": "github",
@@ -22,7 +22,7 @@
     "description": "A library helps to use multiple different URLs with one Servlet with ease.",
     "tech": "java",
     "type": "library",
-    "image_url": "https://kodgemisi.com/jkimages/servlet-url-mapper.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/servlet-url-mapper.png",
     "urls": [
       {
         "type": "github",
@@ -35,7 +35,7 @@
     "description": "A library that helps developer to easily create PDF files with java programatically. It is a wrapper for puppeteer.",
     "tech": "java",
     "type": "library",
-    "image_url": "https://kodgemisi.com/jkimages/java-pdf-generator.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/java-pdf-generator.png",
     "urls": [
       {
         "type": "bitbucket",
@@ -48,7 +48,7 @@
     "description": "A tiny library that helps developers to build and combine complex specifications together with Spring Data JPA.",
     "tech": "java",
     "type": "spring-plugin",
-    "image_url": "https://kodgemisi.com/jkimages/specification-builder.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/specification-builder.png",
     "urls": [
       {
         "type": "github",
@@ -61,7 +61,7 @@
     "description": "A programmatic virus scanner that helps you to scan any file uploaded to your app, programmatically.",
     "tech": "java",
     "type": "library",
-    "image_url": "https://kodgemisi.com/jkimages/java-virus-scanner.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/java-virus-scanner.png",
     "urls": [
       {
         "type": "github",
@@ -74,7 +74,7 @@
     "description": "This is an implementation of database backend for ResourceBundle. Easily store your properties on db",
     "tech": "java",
     "type": "library",
-    "image_url": "https://kodgemisi.com/jkimages/database-resource-bundle.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/database-resource-bundle.png",
     "urls": [
       {
         "type": "github",
@@ -87,7 +87,7 @@
     "description": "Spring starter for database resource bundle. Plug&play database backend for your properties",
     "tech": "java",
     "type": "spring-plugin",
-    "image_url": "https://kodgemisi.com/jkimages/database-resource-bundle-message-source-starter.png",
+    "image_url": "https://kodgemisi.github.io/opensource-kodgemisi/images/database-resource-bundle-message-source-starter.png",
     "urls": [
       {
         "type": "github",
