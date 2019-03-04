@@ -8,7 +8,7 @@ title: Kod Gemisi Open Source
         <div class="card">
             <div class="card-body text-center">
                 <h1 class="card-title">Kod Gemisi Open Source</h1>
-                <h3>We belive in Open Source culture. As a company who uses open source software heavily we open source out internal libraries and applications.</h3>
+                <h3>We belive in Open Source culture. As a company who uses open source software heavily we share our internal libraries and applications with everyone.</h3>
             </div>
         </div>
     </div>
