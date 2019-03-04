@@ -33,7 +33,7 @@ plugins:
 
 jekyll_get:
   data: application
-  json: 'http://95.216.187.204:3000/applications'
+  json: 'https://kodgemisi.github.io/opensource-kodgemisi/applications.json'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

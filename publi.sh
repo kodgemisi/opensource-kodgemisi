@@ -23,7 +23,7 @@ if [[ -n $(git status -s) ]]; then
 fi
 
 # thanks: https://gist.github.com/earthgecko/3089509
-TEMP_FOLDER_NAME="opensource.kodgemisi.com_"`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1`
+TEMP_FOLDER_NAME="opensource-kodgemisi_"`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1`
 
 # Building the site
 export JEKYLL_ENV=production
