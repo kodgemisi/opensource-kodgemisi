@@ -1,4 +1,6 @@
-# Kod Gemisi Open Source site
+# opensource.kodgemisi.com page content
+
+The site is served here [opensource.kodgemisi.com](https://opensource.kodgemisi.com/).
 
 ```
 rvm use 2.6

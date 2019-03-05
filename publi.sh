@@ -30,8 +30,10 @@ export JEKYLL_ENV=production
 bundle exec jekyll build --config _config.yml
 unset JEKYLL_ENV
 
+# Now the generated site is under _site folder
+
 mkdir ../$TEMP_FOLDER_NAME
-cp -r _site ../$TEMP_FOLDER_NAME
+cp -r _site/. ../$TEMP_FOLDER_NAME
 
 git checkout master
 echo '• now on master branch'
@@ -40,16 +42,19 @@ echo '• git pull'
 git pull origin master
 echo '✔ git pull'
 
-rm -rf _site
+# remove all files and directories except .git.
+# tail removes '.' which cannot be removed and crashes the script
+find . | grep -v "\.git" | tail -n +2 | xargs rm -rf
 
-echo '• copying generated files from ../$TEMP_FOLDER_NAME'
-mv ../$TEMP_FOLDER_NAME/_site .
-echo '✔ generated files copied'
+# Use copying instead of moving because it sometimes gives device busy error when moving
+echo '• copy generated files from ../$TEMP_FOLDER_NAME'
+cp -r ../$TEMP_FOLDER_NAME/. .
+echo '✔ generated files are copied'
 
 rm -rf ../$TEMP_FOLDER_NAME
 echo "🚮 ../$TEMP_FOLDER_NAME deleted"
 
-rm _site/publi.sh _site/README.md
+rm publi.sh
 
 echo '• git add'
 git add .
