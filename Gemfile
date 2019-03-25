@@ -30,7 +30,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem 'jekyll-assets'
 gem 'jekyll-compass'
-gem 'jekyll-minify-html'
+gem 'octopress-minify-html'
 gem 'sass'
 gem 'uglifier'
 gem 'jekyll_asset_pipeline'
