@@ -15,17 +15,31 @@ fi
 
 # Fail if there are uncommitted changes
 if [[ -n $(git status -s) ]]; then
-  echo "You have uncommitted changes!"
+  echo -e "You have uncommitted changes!\n"
   git status -s
   echo
   echo "Aborted!"
   exit -1
 fi
 
-# thanks: https://gist.github.com/earthgecko/3089509
-TEMP_FOLDER_NAME="opensource-kodgemisi_"`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1`
+# Fail if there are unpushed changes
+# Note that we shouldn't push unpushed changes from this script to make the user
+# explicitly aware of the situation. We intentionally avoid magic here.
+if [[ -n $(git log origin/jekyll..jekyll) ]]; then
+  clear
+  echo -e "You have unpushed changes!\n"
+  git log origin/jekyll..jekyll
+  echo
+  echo "Aborted!"
+  exit -1
+fi
+
+# thanks for current folder name: ${PWD##*/} https://stackoverflow.com/a/1371283/878361
+# thanks for alphanumeric radom string: https://gist.github.com/earthgecko/3089509
+TEMP_FOLDER_NAME=${PWD##*/}'_'`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1`
 
 # Building the site
+# =================
 export JEKYLL_ENV=production
 bundle exec jekyll build --config _config.yml
 unset JEKYLL_ENV
